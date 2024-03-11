@@ -18,7 +18,6 @@ public class BasicAuthApplication implements CommandLineRunner {
         this.userService = userService;
     }
 
-
     public static void main(String[] args) {
         SpringApplication.run(BasicAuthApplication.class, args);
     }
@@ -26,7 +25,6 @@ public class BasicAuthApplication implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         createDummyData();
-
     }
 
     private void createDummyData() {
