@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql
+    restart: always
+    container_name: polatechno-db
+    environment:
+      MYSQL_ROOT_PASSWORD: ptechnoroot
+      MYSQL_DATABASE: polatechno-db
+      MYSQL_USER: ptechno
+      MYSQL_PASSWORD: ptechno
+    ports:
+      - '3306:3306'
+
+
