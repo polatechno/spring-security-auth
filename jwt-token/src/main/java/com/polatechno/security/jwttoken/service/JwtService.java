@@ -17,7 +17,7 @@ import java.util.Map;
 @Service
 public class JwtService {
 
-    @Value("${jwt.token}")
+    @Value("${jwt.key}")
     private String SECRET;
 
     public String generateToken(String username) {
